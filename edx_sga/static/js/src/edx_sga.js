@@ -33,7 +33,7 @@ function StaffGradedAssignmentXBlock(runtime, element) {
                     var do_upload = $(content).find('.upload').html('');
                     $(content).find('p.error').html('');
                     $('<button/>')
-                        .text('Upload ' + data.files[0].name)
+                        .text(gettext('Upload')+' ' + data.files[0].name)
                         .appendTo(do_upload)
                         .click(function() {
                             do_upload.text('Uploading...');
